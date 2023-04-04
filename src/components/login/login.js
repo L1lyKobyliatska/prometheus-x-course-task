@@ -13,11 +13,11 @@ function Login() {
      addToCart = () => {
         const raw = JSON.parse(localStorage.getItem('selectedBooks'));
         if (!raw) {
-            document.location = '/purchase';
+            document.location = 'purchase';
         } else if (raw.length === 0) {
-            document.location = '/purchase';
+            document.location = 'purchase';
         } else {
-            document.location = '/fullCart';
+            document.location = 'fullCart';
         };
      }
 
