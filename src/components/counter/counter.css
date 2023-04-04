@@ -1,0 +1,105 @@
+
+.price-calculate {
+    border: 1px dashed black;
+    padding: 1.5% 2.5%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 30%;
+  }
+
+  .price-calculate__add-cart {
+    display: flex;
+    margin: 5% 0 0;
+    justify-content: flex-end;
+  }
+
+  .price-calculate .add-cart {
+    bottom: 5%;
+    right: 3%;
+    padding: 2%;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 50%;
+  }
+
+  .price-calculate__price,
+  .price-calculate__total,
+  .price-calculate p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+
+  .price-calculate input{
+    width: 25%;
+    border-radius: 10px;
+    line-height: 1.5;
+    border: 1px solid #c5c5c5;
+    font-size: 2rem;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .price-calculate input::-webkit-outer-spin-button,
+  .price-calculate input::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  .price-calculate p>button {
+    position: absolute;
+    right: 1px;
+    width: 7%;
+    height: 50%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff
+  }
+
+  .up {
+    top: 1px;
+    z-index: 3;
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid #c5c5c5;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid #c5c5c5;
+  }
+
+  .up div {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 50%;
+    height: 50%;
+    background-color:aqua;
+  }
+
+  .down {
+    bottom: 1px;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid #c5c5c5;
+    border-bottom-right-radius: 15px;
+    border-bottom: none;
+  }
+
+  .down div {
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    width: 50%;
+    height: 50%;
+    background-color:aqua;
+  }
+
+  @media screen and (max-width: 425px) {
+    .price-calculate {
+      width: 95%;
+    }
+  }

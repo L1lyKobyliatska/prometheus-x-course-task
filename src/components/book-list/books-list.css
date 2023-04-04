@@ -1,0 +1,105 @@
+.main {
+    display: flex;
+    gap: 6%;
+    padding: 1% 1.5%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.book-search {
+    display: flex;
+    padding: 1% 1.5%;
+    gap: 4%;
+}
+
+.book-search input {
+    border: 1px solid #c5c5c5;
+    font-size: 2rem;
+    width: 40%;
+    padding: 0 0.5% 0 1%;
+}
+
+.book-search input::placeholder {
+    background-image: url("../../assets/vecteezy_search-icon.png");
+    background-size: 2.5vh;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    z-index: 3;
+}
+
+.form__select {
+    appearance: none;
+    border-radius: 7px;
+    line-height: 1.8;
+    border: none;
+    width: 18rem;
+    padding: 0 0 0 0.4em;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fieldset {
+    padding: 0;
+    border: none;
+    position: relative;
+    border-radius: 7px;
+    background-color: transparent;
+    border: 1px solid #c5c5c5;
+    overflow: hidden;
+}
+
+.fieldset::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-left: 1px solid #c5c5c5;
+    background-color: aqua;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.form {
+    position: relative;
+}
+
+.form::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(100% 0, 0 0, 51% 100%);
+    position: absolute;
+    background-color: #ffffff;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .main, 
+    .book-search {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .book-search {
+        flex-direction: column;
+        padding: 1% 12.5%;
+    }
+
+    .book-search input {
+        width: 90%;
+        margin-bottom: 3%;
+    }
+
+    .form {
+        width: 75%;
+    }
+}

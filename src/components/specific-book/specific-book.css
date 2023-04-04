@@ -1,0 +1,44 @@
+  .main-section,
+  section .long-description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1%;
+    padding: 1% 3%;
+    font-weight: 400;
+    align-items:flex-start;
+    justify-content: flex-start;
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .main-section img {
+    width: 35%;
+  }
+
+  .main-section p:first-child {
+    font-weight: bold;
+    white-space: normal;
+  }
+
+  .book-description {
+    width: 28%;
+  }
+
+  .book-description p{
+    margin: 4% 0%;
+   
+  }
+
+  @media screen and (max-width: 425px) {
+    .main-section,
+  section .long-description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-section img,
+  .book-description {
+    width: 95%;
+  }
+  }

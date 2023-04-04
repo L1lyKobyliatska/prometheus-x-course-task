@@ -1,0 +1,57 @@
+.book-cards {
+    width: 100%;
+    display: flex;
+    gap: 6%;
+    padding: 1% 1.5%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.7rem;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    border: 1px solid black;
+    padding: 1%;
+    margin-bottom: 2%;
+    justify-content: space-between;
+}
+
+.book-name {
+    font-weight: bold;
+    margin: 6% 0 1%;
+}
+
+.description p {
+    margin: 1% 0;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-button {
+    width: 40%;
+}
+
+ .book-view {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 8% 30%;
+    border-radius: 5px;
+} 
+
+@media screen and (max-width: 768px) {
+    .book-card {
+      width: 40%;  
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .book-card {
+      width: 80%;  
+    }
+}

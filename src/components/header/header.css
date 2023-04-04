@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    font-size: 1rem;
+    padding: 0 1%;
+    justify-content: space-between;
+}
+
+
+header hr:first-child {
+    margin: 3% 0 0;
+}
+
+header hr:last-child {
+    margin: 0 0 2% 0;
+}
+
+.header h1 {
+    font-size: 2rem;
+    align-self: center;
+    padding: 2%;
+}
+
+

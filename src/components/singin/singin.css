@@ -1,0 +1,58 @@
+.section,
+.section form,
+.input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5% 0%;
+    align-items: center;
+}
+
+.section img {
+    width: 160px;
+    height: 160px;
+}
+
+.section input,
+.section button {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.section input {
+    width: 194px;
+}
+
+.section button {
+    width: 200px;
+    font-weight: bold;
+    margin: 10% 0;
+}
+
+.section {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 320px) {
+
+    .section {
+        padding: 1.5% 8px;
+    }
+
+    .section form,
+    .input-container,
+    .section button {
+        width: 100%;
+    }
+
+    .section input {
+        width: 98%;
+    }
+
+    .section img {
+        width: 200px;
+        height: 200px;
+    }
+}
