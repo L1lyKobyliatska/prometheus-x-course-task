@@ -7,7 +7,7 @@ function SpecificBook() {
     const book = JSON.parse(localStorage.getItem('viewBook'))
     
     if (!localStorage.authorization) {
-        document.location = 'prometheus-x-course-task'
+        document.location = '/'
     } else {
         return (
             <main>

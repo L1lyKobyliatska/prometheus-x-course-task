@@ -5,7 +5,7 @@ import ButtonPurchase from '../buttonPurchase/buttonPurchase';
 
 export default function Purchase() {
     if (!localStorage.authorization) {
-        document.location = 'prometheus-x-course-task'
+        document.location = '/'
     } else {
         return (
             <main>
