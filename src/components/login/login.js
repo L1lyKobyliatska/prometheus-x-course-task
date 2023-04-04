@@ -31,14 +31,14 @@ function Login() {
                 src={cart}
                 onClick={addToCart}
                 alt="cart" />
-            <Link className='sing-out' to="/">
+            <Link className='sing-out' to="prometheus-x-course-task">
                 <button 
                 className='sing-out__button'
                 onClick={singOut}
                 type="button">Sign-Out</button>
             </Link>
             <div className="user-photo"></div>
-            <a href="/" className='user'>{username}</a>
+            <Link to='prometheus-x-course-task/books-list' className='user'>{username}</Link>
         </div>
     )
 }

@@ -73,7 +73,7 @@ function BooksList() {
     if (!localStorage.authorization) {
         document.querySelector('.navbar-toggler').classList.add('hidden');
         document.querySelector('.navbar-toggler').classList.remove('visible');
-        document.location = '/'
+        document.location = 'prometheus-x-course-task'
     } else {
         return (
                 <main>

@@ -20,8 +20,8 @@ function App() {
       <BooksProvider value={books}>
         <Header />
         <Routes>
-          <Route path='/' element={<Signin />} />
-          <Route path='books-list' element={<BooksList />} />
+          <Route path='prometheus-x-course-task' element={<Signin />} />
+          <Route path='prometheus-x-course-task/books-list' element={<BooksList />} />
           <Route path='specific-book' element={<SpecificBook />} />
           <Route path='purchase' element={<Purchase />} />
           <Route path='fullCart' element={<FullCart />} />
