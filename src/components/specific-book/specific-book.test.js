@@ -7,7 +7,6 @@ describe('Testing Specific-book page',  () => {
     it('should ', () => {
         render(<SpecificBook/>);
         screen.debug();
-        screen.getByRole('')
         expect(screen.getByText(/Book tags:/i)).toBeInTheDocument()
     });
     
