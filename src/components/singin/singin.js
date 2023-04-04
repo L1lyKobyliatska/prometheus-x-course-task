@@ -34,7 +34,7 @@ export default function Signin() {
     }, [username]);
 
     if (localStorage.authorization) {
-        document.location = 'books-list';
+        document.location = 'prometheus-x-course-task/books-list';
     } else {
         return (
             <main>
